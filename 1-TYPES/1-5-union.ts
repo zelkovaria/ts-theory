@@ -4,7 +4,7 @@
    * 특정 값만 지정하고 싶을 때
    */
   type Direction = "right" | "left" | "up" | "down";
-  function move(direction: Direction) {
+  function move1_5(direction: Direction) {
     console.log(direction);
   }
 
