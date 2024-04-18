@@ -19,4 +19,5 @@
 
   type Keys = keyof Animal;
   //Animal에 있는 모든 키를 타입으로 할당 -> 'name' | 'age' | 'gender'
+  const key: Keys = "age";
 }
