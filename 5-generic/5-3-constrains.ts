@@ -28,10 +28,10 @@ function pay<T extends Employee>(employee: T): T {
   return employee;
 }
 
-const elie = new FullTimeEmployee();
+const ellie = new FullTimeEmployee();
 const bob = new PartTimeEmployee();
-elie.workFullTime();
+ellie.workFullTime();
 bob.workPartTime();
 
-const elieAfterPay = pay(elie);
+const elieAfterPay = pay(ellie);
 const bobAfterPay = pay(bob);
