@@ -27,3 +27,17 @@
   let dayOfweek: DaysOfWeek = "MONDAY";
   dayOfweek = "hyein"; //없는 값을 지정하면 type 에러가 뜸. 이게 enum보다 안전하고 좋음
 }
+
+
+enum ERROR_CODE {
+  "SUCCESS" = 200,
+  "SERVER_ERROR" = 400,
+  "ALREADY_APPLIED" = 4001,
+}
+
+const errorStatus = someAPIFetch();
+
+if (errorStatus === ERROR_CODE.ALREADY_APPLIED) {
+  handleAlreadyApplied();
+}
+이런식으로 에러 관리하는건 좋음 -> enum으로! 에러코드 구별이 가능해지니까
